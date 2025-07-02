@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Routely</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Tunahan Ali Öztürk</Authors>
+    <Company>Moongazing</Company>
+    <Description>Senior-level minimal API routing infrastructure for .NET  projects.</Description>
+    <PackageTags>dotnet routing minimalapi swagger</PackageTags>
+    <PackageLicenseFile>docs/License.txt</PackageLicenseFile>
+    <PackageReadmeFile>docs/README.md</PackageReadmeFile>
+    <PackageIcon>docs/logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Moongazing/Routely</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\README.md" Pack="true" PackagePath="docs\" />
+    <None Include="..\..\docs\License.txt" Pack="true" PackagePath="docs\" />
+    <None Include="..\..\docs\logo.png" Pack="true" PackagePath="docs\" />
+  </ItemGroup>
+
+</Project>
